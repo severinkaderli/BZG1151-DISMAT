@@ -66,7 +66,6 @@ Teilgebiete der diskreten Mathematik umfassen unter anderem:
 \section{Aussagenlogik}
 Eine Aussage ist ein sprachliches Gebilde, die entweder wahr oder falsch sein kann. Das Resultat einer Aussage nennt man Wahrheitswert und dieser ist zweiwertig, da er nur zwei Werte (wahr und falsch) annehmen kann.
 
-\newpage
 \subsection{8-Damen-Problem}
 Auf einem 8 mal 8 Schachbrett sollen 8 Damen platziert werden, ohne dass sie sich gegenseitig angreifen können.
 
@@ -335,6 +334,73 @@ $A$, $B$ und $C$ sind beliebige Mengen und $\varnothing$ ist die Leere Menge.
 
 \newpage 
 \section{Übungsbeispiele aus Skript}
+\subsection{Beispiel 1}
+\begin{enumerate}[(a)]
+  \item wahr
+  \item wahr
+  \item Keine Aussage
+  \item Keine Aussage
+  \item wahr
+  \item wahr / falsch
+  \item wahr / falsch
+  \item Keine Aussage
+  \item wahr / falsch
+  \item Keine Aussage
+\end{enumerate}
+
+\subsection{Beispiel 2}
+\begin{enumerate}[(a)]
+  \item wahr
+  \item wahr
+\end{enumerate}
+
+\subsection{Beispiel 3}
+\begin{equation}
+  \begin{tabular}{| c | c | c |}
+    \hline
+    $A$ & $B$ & $A \oplus B$ \\ \hline
+    0 & 0 & 0 \\ \hline
+    0 & 1 & 1 \\ \hline
+    1 & 0 & 1 \\ \hline
+    1 & 1 & 0 \\ \hline
+  \end{tabular}
+\end{equation}
+
+\subsection{Beispiel 4}
+\begin{enumerate}
+  \item $2^{n}$
+  \item $(2)^{2^{n}}$
+\end{enumerate}
+
+\subsection{Beispiel 5}
+\begin{equation}
+  \begin{tabular}{| c | c | c | c | c | c |}
+    \hline
+    $A$ & $B$ & $C$ & $\lnot C$ & $B \lor \lnot C$ & $A \land (B \lor \lnot C)$ \\ \hline
+    0 & 0 & 0 & 1 & 1 & 0 \\ \hline
+    0 & 0 & 1 & 0 & 0 & 0 \\ \hline
+    0 & 1 & 0 & 1 & 1 & 0 \\ \hline
+    0 & 1 & 1 & 0 & 1 & 0 \\ \hline
+    1 & 0 & 0 & 1 & 1 & 1 \\ \hline
+    1 & 0 & 1 & 0 & 0 & 0 \\ \hline
+    1 & 1 & 0 & 1 & 1 & 1 \\ \hline
+    1 & 1 & 1 & 0 & 1 & 1 \\ \hline
+  \end{tabular}
+\end{equation}
+
+\subsection{Beispiel 6}
+\begin{enumerate}
+  \item Ja
+  \item Ja
+  \item Nein
+  \item Nein
+\end{enumerate}
+
+\subsection{Beispiel 7}
+\begin{equation}
+  (A \land B \land \lnot C) \lor (A \land \lnot B \land C) \lor (\lnot A \land B \land C)
+\end{equation}
+
 \subsection{Beispiel 8}
 \begin{equation}
   (A \land B \land C) \lor (A \land B \land \lnot C) \lor (A \land \lnot B \land \lnot C) \lor (\lnot A \land \lnot B \land C)
@@ -342,8 +408,36 @@ $A$, $B$ und $C$ sind beliebige Mengen und $\varnothing$ ist die Leere Menge.
 
 \subsection{Beispiel 9}
   Diese Aussage lässt sich vereinfacht als $C \lor \lnot C$ darstellen. Es handelt sich also um eine Tautologie und alle Zeilen der Wahrheitstabelle sind wahr.
- 
 
+\subsection{Beispiel 10}
+Beide Aussagen besitzen die selbe Wahrheitstabelle.
+\begin{equation}
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    $A$ & $B$ & $\lnot(A \land B)$ & $\lnot A \lor \lnot B$ \\ \hline
+    0 & 0 & 1 & 1 \\ \hline
+    0 & 1 & 1 & 1 \\ \hline
+    1 & 0 & 1 & 1 \\ \hline
+    1 & 1 & 0 & 0 \\ \hline
+  \end{tabular}
+\end{equation}
+
+\subsection{Beispiel 11}
+\begin{enumerate}[(a)]
+  \item Die Rose ist nicht rot oder wohlriechend.
+  \item Heute gehe ich nicht ins Kino und lese kein Buch.
+  \item 3 <= 2
+  \item 3 <= 2 oder -1 >= 0
+\end{enumerate}
+
+\subsection{Beispiel 12}
+
+
+\subsection{Beispiel 13}
+
+\subsection{Beispiel 14}
+
+\subsection{Beispiel 15}
 
 \subsection{Beispiel 16}
 \begin{equation}
@@ -390,10 +484,23 @@ Die eigentliche Lösung im komplexen Zahlenraum wäre:
 \end{enumerate}
 
 \subsection{Beispiel 31}
- 
+\begin{enumerate}[$\bullet$]
+  \item $A = \{x : x^{2} > 4\}$
+  \item $B = \{x: x >= 0\}$
+\end{enumerate}
+
+\subsection{Beispiel 32}
+\begin{enumerate}[$\bullet$]
+  \item $A \setminus B = \{5\}$
+\end{enumerate}
+
 \subsection{Beispiel 33}
+\begin{equation}
+  (A \cap B)^{\complement} = \{x : (x \in U \land x \notin A) \lor (x \in U \land x \notin B)\} = \{x : A^{\complement} \lor B^{\complement}\}
+\end{equation}
 
 \subsection{Beispiel 34}
+Wenn man $\varnothing$ und $U$ austauscht und $\cup$ und $\cap$ austauscht erhält man jeweils das andere Gesetzt. Deshalb sind sie paarweise aufgelistet. 
 
 \subsection{Beispiel 35} 
 \begin{enumerate}[$\bullet$]
@@ -430,6 +537,7 @@ Eine Menge mit $n$ Elementen besitzt $2^{n}$ Teilmengen.
 Anzahl der Elemente von $A$ mal die Anzahl der Elemente von $B$ ergibt die Anzahl der Elemente von $A \times B$.
 
 
+\newpage
 \section{Übungsserien}
 \subsection{Serie 3}
 \subsubsection{Aufgabe 1}
@@ -469,7 +577,7 @@ Anzahl der Elemente von $A$ mal die Anzahl der Elemente von $B$ ergibt die Anzah
 \begin{enumerate}[(a)]
   \item 5
   \item Siehe Bild unten
-  \item 38
+  \item 33
 \end{enumerate}
 
 \subsubsection{Aufgabe 5}
@@ -479,5 +587,26 @@ Anzahl der Elemente von $A$ mal die Anzahl der Elemente von $B$ ergibt die Anzah
 
 \subsubsection{Aufgabe 6}
 Kleinkinder können keine Krokodile bezwingen.
+
+\subsubsection{Aufgabe 7} 
+\begin{center}
+  \includegraphics[width=0.75\textwidth]{ex3-7.png}
+\end{center} 
+ 
+\subsubsection{Aufgabe 8}
+
+\subsubsection{Aufgabe 9}
+\begin{enumerate}[(a)]
+  \item f
+\end{enumerate}
+
+
+\subsubsection{Aufgabe 10}
+\begin{enumerate}[(a)]
+  \item \{(Marc, Eric), (Marc, David), (Eric, Eric), (Eric, David), (Paul, Eric), (Paul, David)\}
+  \item \{(Eric, Marc), (Eric, Eric), (Eric, Paul), (David, Marc), (David, Eric), (David, Paul)\}
+  \item \{(Eric, Eric), (Eric, David), (David, Eric), (David, David)\}
+\end{enumerate}
+
  
 \end{document}

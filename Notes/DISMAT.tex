@@ -14,7 +14,7 @@
 \usepackage{graphicx}
 \usepackage{mathabx}
 \graphicspath{ {images/}} 
-
+ 
 % Definitionen auf neuer Zeile
 \setdescription{labelsep=\textwidth}
   
@@ -66,6 +66,8 @@ Teilgebiete der diskreten Mathematik umfassen unter anderem:
 \section{Aussagenlogik}
 Eine Aussage ist ein sprachliches Gebilde, die entweder wahr oder falsch sein kann. Das Resultat einer Aussage nennt man Wahrheitswert und dieser ist zweiwertig, da er nur zwei Werte (wahr und falsch) annehmen kann.
 
+Falls man eine "Aussage" hat, die man nicht eindeutig beantworten kann, ist es keine Aussage.
+
 \subsection{8-Damen-Problem}
 Auf einem 8 mal 8 Schachbrett sollen 8 Damen platziert werden, ohne dass sie sich gegenseitig angreifen können.
 
@@ -75,15 +77,15 @@ Auf einem 8 mal 8 Schachbrett sollen 8 Damen platziert werden, ohne dass sie sic
 
 Die obige Lösung für das 8-Damen-Problem kann man als Aussage folgendermassen formulieren:
 
-\begin{equation}
+\begin{equation*}
   D_{1c} \land D_{2e} \land D_{3b} \land D_{5a} \land D_{7d} \land D_{8f} \land D_{6g} \land D_{4h}
-\end{equation}
+\end{equation*}
 
 
 \subsection{Konjunktion $A \land B$}
 AND-Verknüpfung die wahr ist, wenn A und B wahr sind.
 
-\begin{equation}
+\begin{equation*}
   \begin{tabular}{| c | c | c |}
     \hline
     $A$ & $B$ & $A \land B$ \\ \hline
@@ -92,13 +94,13 @@ AND-Verknüpfung die wahr ist, wenn A und B wahr sind.
     1 & 0 & 0 \\ \hline
     1 & 1 & 1 \\ \hline
   \end{tabular}
-\end{equation}
+\end{equation*}
 
 
 \subsection{Disjunktion $A \lor B$}
 OR-Verknüpfung, die wahr ist, wenn A oder B wahr sind.
 
-\begin{equation}
+\begin{equation*}
   \begin{tabular}{| c | c | c |}
     \hline
     $A$ & $B$ & $A \lor B$ \\ \hline
@@ -107,13 +109,13 @@ OR-Verknüpfung, die wahr ist, wenn A oder B wahr sind.
     1 & 0 & 1 \\ \hline
     1 & 1 & 1 \\ \hline
   \end{tabular}
-\end{equation}
+\end{equation*}
 
 
 \subsection{XOR-Verknüpfung $\oplus$}
 Verknüpfung, die wahr ist, wenn entweder A oder B wahr sind.
 
-\begin{equation}
+\begin{equation*}
   \begin{tabular}{| c | c | c |}
     \hline
     $A$ & $B$ & $A \oplus B$ \\ \hline
@@ -122,28 +124,28 @@ Verknüpfung, die wahr ist, wenn entweder A oder B wahr sind.
     1 & 0 & 1 \\ \hline
     1 & 1 & 0 \\ \hline
   \end{tabular}
-\end{equation}
+\end{equation*}
 
 
 \subsection{Negation $\lnot$}
 Die Negation ist wahr, wenn A falsch ist und falsch, wenn A wahr ist.
 
-\begin{equation}
+\begin{equation*}
   \begin{tabular}{|c |c |}
     \hline
     $A$ & $\lnot A$ \\ \hline
     0 & 1 \\ \hline
     1 & 0 \\ \hline
   \end{tabular}
-\end{equation}
+\end{equation*}
 
 
 \subsection{Zusammengesetzte Aussagen}
-Man kann verschiedene Aussagen zu einer grösseren zusammengesetzten Aussage zusammenschliessen. Eine Zusammengesetze Aussage $P(A_{1}, A_{2}..., A_{N})$ enthält $2^{n}$ Zeilen in der Wahrheitstabelle und kann aus bis zu $(2)^{2^{n}}$ Wahrheitstabellen bestehen.
+Man kann verschiedene Aussagen zu einer  grösseren zusammengesetzten Aussage zusammenschliessen. Eine Zusammengesetze Aussage $P(A_{1}, A_{2}..., A_{N})$ enthält $2^{n}$ Zeilen in der Wahrheitstabelle und kann aus bis zu $(2)^{2^{n}}$ Wahrheitstabellen bestehen.
 
 Auch zu diesen zusammengesetzten Aussagen kann man eine Wahrheitstabelle erstellen. Hier im Beispiel die Aussage $A \land (B \lor A)$.
 
-\begin{equation}
+\begin{equation*}
   \begin{tabular}{| c | c | c | c |}
     \hline
     $A$ & $B$ & $B \lor A$ & $A \land (B \lor A)$ \\ \hline
@@ -152,7 +154,7 @@ Auch zu diesen zusammengesetzten Aussagen kann man eine Wahrheitstabelle erstell
     1 & 0 & 1 & 1 \\ \hline
     1 & 1 & 1 & 1 \\ \hline
   \end{tabular}
-\end{equation}
+\end{equation*}
 
 \newpage
 \subsection{Disjunktive Normalform}
@@ -160,11 +162,11 @@ Um die Disjunktive Normalform einer Wahrheitstabelle zu erstellen muss man nur d
 
 Zur untenstehenden Wahrheitstabelle kann man also folgende Disjunktive Normalform schreiben:
 
-\begin{equation}
+\begin{equation*}
   (\lnot A \land B) \lor (A \land \lnot B) \lor (A \land B)
-\end{equation}
+\end{equation*}
 
-\begin{equation}
+\begin{equation*}
   \begin{tabular}{|c|c|c|}
   \hline
   $A$ & $B$ & $A \lor B$ \\ \hline
@@ -173,7 +175,7 @@ Zur untenstehenden Wahrheitstabelle kann man also folgende Disjunktive Normalfor
   1 & 0 & 1 \\ \hline
   1 & 1 & 1 \\ \hline
   \end{tabular}
-\end{equation} 
+\end{equation*} 
 
 \subsection{Tautologien und Kontradiktionen}
 Eine zusammengesetzte Aussage $P(A, B,...)$, die in der letzten Spalte der Wahrheitstabelle nur wahr ist, wird Tautologie genannt.
@@ -182,23 +184,23 @@ Eine zusammengesetzte Aussage $P(A, B,...)$, die in der letzten Spalte der Wahrh
 
 \subsection{Logische Äquivalenz}
 Zwei zusammengesetzte Aussagen $P(A, B,...)$ und $Q(A, B,...)$ sind logisch äquivalent, wenn sie die gleichen Wahrheitstabellen besitzen. Die logische Äquivalenz kann man folgendermassen schreiben:
-\begin{equation} 
+\begin{equation*} 
   P(A, B,...) \equiv Q(A, B,...)
-\end{equation}
+\end{equation*}
 
 \subsection{Implikation}
 Eine Aussage in der Form: "Wenn A, dann B.". Solche Aussagen nennt man Implikationen und werden mit der folgenden Schreibweise gekennzeichnet:
-\begin{equation}
+\begin{equation*}
   A \Rightarrow B 
-\end{equation} 
+\end{equation*} 
 
 Wenn man die Implikation umdreht ist sie nicht logisch äquivalent.
-\begin{equation}
+\begin{equation*}
   A \Rightarrow B \not\equiv B \Rightarrow A
-\end{equation}
+\end{equation*}
 
 Hier die Wahrheitstabelle für die Implikation:
-\begin{equation}
+\begin{equation*}
   \begin{tabular}{|c|c|c|}
     \hline
     $A$ & $B$ & $A \Rightarrow B$ \\ \hline
@@ -207,7 +209,7 @@ Hier die Wahrheitstabelle für die Implikation:
     1 & 0 & 0 \\ \hline
     1 & 1 & 1 \\ \hline
   \end{tabular}
-\end{equation}
+\end{equation*}
 
 \newpage
 \section{Prädikatenlogik}
@@ -216,98 +218,98 @@ Eine Aussageform (Prädikat) ist eine Folge von Wörtern mit Leerstellen, die zu
 
 Ein Element $f$ in der Menge $F$ kann man folgendermassen darstellen: 
 
-\begin{equation}
+\begin{equation*}
   f \in F
-\end{equation}
+\end{equation*}
 
 \subsection{Quantoren}
 Quantoren sind Operatoren wie die Junktoren. Es gibt die Quantoren für eine Allaussage $\forall$ und für die Existenzprüfung $\exists$. Wenn man betonen will, dass es nur ein Element gibt kann man den Quantor $\exists!$ verwenden.
 
 Beispiel für die Nutzung von Quantoren (P ist die Menge der Primzahlen):
-\begin{equation}
+\begin{equation*}
   \exists!\ p \in P : (p\ ist\ gerade)
-\end{equation}
+\end{equation*}
 
 \newpage
 \section{Mengenlehre}
 Eine Menge ist eine Sammlung von Elementen die einen Zusammenhang haben. In folgenden Beispielen ist $P$ ein Element bzw. nicht ein Element von der Menge $A$.
  
-\begin{equation}
+\begin{equation*}
   p \in A
-\end{equation}
+\end{equation*}
 
-\begin{equation}
+\begin{equation*}
   p \notin A
-\end{equation}
+\end{equation*}
 
 und $A = B$ ist genau dann wenn $A = B \equiv \forall x (x \in A \equiv x \in B)$
 
 \subsection{Teilmengen}
 Fall jedes Element von A in B vorkommt, ist A eine Teilmenge von B.
-\begin{equation}
+\begin{equation*}
   A \subset B \Rightarrow \forall x \in U : (x \in A \Rightarrow x \in B)
-\end{equation}
+\end{equation*}
 
 \subsection{Vereinigung}
 Die Vereinigung der Mengen $A$ und $B$ ist die Menge der Elemente die $A$ oder in $B$ sind. Man schreibt die Vereinigung (Union) folgendermassen.
 
-\begin{equation}
+\begin{equation*}
   A \cup B := \{x : x \in A \lor x \in B\}
-\end{equation}
+\end{equation*}
 
 \subsection{Durchschnitt}
 Der Durchschnitt der Mengen $A$ und $B$ sind die Elemente die in $A$ und $B$ vorkommen. Man schreibt den Durchschnitt folgendermassen.
 
-\begin{equation}
+\begin{equation*}
   A \cap B := \{x : x \in A \land x \in B\}
-\end{equation}
+\end{equation*}
 
 \subsection{Komplement}
 Das Komplement der Menge, ist die Menge der Elemente von $U$, die nicht zu $A$ gehören.
 
-\begin{equation}
+\begin{equation*}
   A^\complement := \{x : x \in U \land x \notin A\}
-\end{equation}
+\end{equation*}
 
 \subsection{Differenz}
 Die Differenz der Mengen $A$ und $B$, ist die Menge der Elemente von $A$, die nicht in $B$ vorkommen.
 
-\begin{equation}
+\begin{equation*}
   A \setminus B := \{x : x \in A \land x \notin B\}
-\end{equation}
+\end{equation*}
 
 \subsection{Mengensystem}
 Eine Menge von Mengen heisst Mengensystem. Das System aller Teilmengen einer Menge $S$ heisst Potenzmenge und wird mit $P(S)$ bezeichnet. Falls man eine Menge $S = \{1, 2\}$ hat dann ist die Potenzmenge von $S$:
 
-\begin{equation}
+\begin{equation*}
   P(S) = \{\varnothing, \{1\}, \{2\}, \{1, 2\}\}
-\end{equation}
+\end{equation*}
 
 Eine Partition von der Menge S, ist die Aufteilung von S in nicht-leere Teilmengen, welche sich nicht überlappen. Beispielweise hat man eine Menge $A = \{1, 2, 3, 4, 5, 6, 7\}$. Eine mögliche Partition dafür wäre:
 
-\begin{equation}
+\begin{equation*}
   \{\{1, 2\}, \{3, 4, 5, 6\}, \{7\}\}
-\end{equation}
+\end{equation*}
 
 
 \subsection{Geordnete Paare}
 Bei normalen Mengen spielt die Reihenfolge der Elemente keine Rolle.
 
-\begin{equation}
+\begin{equation*}
   \{a, b\} = \{b, a\}
-\end{equation}
+\end{equation*}
 
 Bei einem Geordnetem Paar ist die Reihenfolge aber wichtig. Ein geordnetes Paar schreibt man mit der folgenden Schreibweise:
-\begin{equation}
+\begin{equation*}
   (a, b) \neq (b, a)
-\end{equation}
+\end{equation*}
 
 
 \subsection{Kartesisches Produkt}
 Man hat zwei Mengen $A$ und $B$. Die Menge aller geordneter Paare mit $x \in A$ und $y \in B$ nennt man kartesisches Produkt und wird mit $A \times B$ bezeichnet.
-\begin{equation}
+\begin{equation*}
   A \times B = \{(x, y) : x \in A \land y \in B\}
-\end{equation}
+\end{equation*}
 
 $\rightarrow$ Siehe Beispiel 38 und 39.
 
@@ -320,14 +322,80 @@ Die leere Menge $\varnothing$ und die Menge der Buchstaben des Alphabetes sind e
 \section{Abbildungen}
 
 \newpage
-\section{Kombinatorik}
-\subsection{Binomialkoeffizient}
-Der Binomialkoeffizient zeigt an wie viele Kombinationen es gibt k Elemente aus n herauszunehmen.
+\section{Die natürlichen Zahlen}
+\subsection{Induktion}
 
-\begin{equation}
+\subsection{Kombinatorik}
+\subsubsection{Fakultät}
+Die Fakultät von $n$ kann man als $n!$ angeben. Die Fakultät ist dabei das Produkt aller Zahlen von 1 bis und mit $n$.
+
+\begin{equation*}
+  n! = 1 * 2 * 3 * ... * (n - 1) * n
+\end{equation*}
+
+\subsubsection{Binomialkoeffizient}
+Der Binomialkoeffizient zeigt an wie viele Kombinationen es gibt k Elemente aus n Elemente herauszunehmen, wobei die Reihenfolge keine Rolle spielt.
+
+\begin{equation*}
   \binom{n}{k} = \frac{n!}{k!(n-k)!}
-\end{equation}
+\end{equation*}
 
+\subsection{Primzahlen}
+Eine Primzahl ist eine Zahl die grösser als 1 ist und durch 1 und sich selber teilbar ist. Ein paar Beispiele für Primzahlen sind $\{2, 3, 5, 7, 11, 13, 17, 23, ...\}$.
+
+\subsubsection{Sieb des Eratosthenes}
+Eine schnelle Methode um z. B. alle Primzahlen bis n zu bestimmen ist, das Sieb des Eratosthenes zu verwenden. Dabei schreibt man erst alle Zahlen bis n auf und fängt dann bei der 2 an. Die 2 ist eine Primzahl also kann man alle Vielfachen von 2 abstreichen, da diese ganz sicher keine Primzahl sind. Dann geht man zur nächsten noch nicht abgestrichenen Zahl, in diesem Fall die 3 und streicht dann alle Vielfachen von 3. Das macht man solange weiter bis man bei $\sqrt{n} + 1$ angekommen ist. Alle Zahlen, welche nun nicht abgestrichen sind, sind Primzahlen.
+
+\subsection{Euklidischer Algorithmus}
+Mit dem Euklidischen Algorithmus kann man einfach und schnell den grössten gemeinsamen Teiler (ggT) von zwei Zahlen bestimmen. Nachfolgend ein Beispiel, welches den ggT(1564, 134) bestimmt:
+
+\begin{equation*} \label{eq2}
+  \begin{split}
+    1564 & = 11 * 134 + 90 \\
+    134 & = 1 * 90 + 44 \\
+    90 & = 2 * 44 + 6 \\
+    44 & = 7 * 6 + 2 \\
+    6 & = 3 * 2 + 0
+  \end{split}
+\end{equation*}
+
+Der ggT ist der letzte Rest der nicht $0$ ist. In diesem Fall ist der ggT(1564, 134) = 2.
+
+\subsubsection{Obere Schranke für Schritte}
+Die obere Anzahl der Schritte für den Euklidischen Algorithmus kann man folgendermassen berechnen. Noch zu beachten ist, dass $a \ge b$ sein muss.
+
+\begin{equation*}
+  \text{Anzahl Schritte} = 2 * log_{2} (2b)
+\end{equation*}
+
+Nachfolgend ein Graph der die Entwicklung der Anzahl Schritte anzeigt.
+\begin{center}
+  \includegraphics[width=0.75\textwidth]{euklid.png}
+\end{center} 
+
+\subsection{Kleinstes gemeinsames Vielfache (kgV)}
+Das kgV von zwei Zahlen ist, die kleinste Zahl, die ein Vielfaches von beiden Zahlen ist. Z. B. Das $kgV(30, 45)$ beträgt 90.
+
+Mit dem ggT zusammen kann man feststellen, dass $ab = ggT(a, b) * kgV(a, b)$ ist.
+
+\subsection{Ganze Zahlen}
+Die ganzen Zahlen ist die Menge der natürlichen Zahlen und zusätzlich noch die negativen Zahlen und die 0.
+
+\begin{equation*}
+  \mathbb{Z} = \{..., -3, -2, -1, 0, 1, 2, 2, ...\}
+\end{equation*}
+
+\subsubsection{Kongruenzrelation}
+Zwei ganze Zahlen $a$ und $b$, und eine natürliche Zahl $m$ sind gegeben. $a$ und $b$ sind kongruent modulo $m$: $a \equiv b \mod m $ falls $a - b$ durch $m$ geteilt werden kann.
+
+Nachfolgend ein paar Beispiele zur Kongruenzrelation:
+
+\begin{equation*}
+  \begin{split}
+    11 \equiv 3 & \mod 4 \text{, denn } 4 \divides (11 - 3)\\
+    22 \equiv 4 & \mod 4 \text{, denn } 4 \divides (22 - 4)
+  \end{split}
+\end{equation*}
 
 %%%%%%%%
 %
@@ -368,7 +436,7 @@ $A$, $B$ und $C$ sind beliebige Mengen und $\varnothing$ ist die Leere Menge.
 \end{enumerate}
 
 \subsection{Beispiel 3}
-\begin{equation}
+\begin{equation*}
   \begin{tabular}{| c | c | c |}
     \hline
     $A$ & $B$ & $A \oplus B$ \\ \hline
@@ -377,7 +445,7 @@ $A$, $B$ und $C$ sind beliebige Mengen und $\varnothing$ ist die Leere Menge.
     1 & 0 & 1 \\ \hline
     1 & 1 & 0 \\ \hline
   \end{tabular}
-\end{equation}
+\end{equation*}
 
 \subsection{Beispiel 4}
 \begin{enumerate}
@@ -386,7 +454,7 @@ $A$, $B$ und $C$ sind beliebige Mengen und $\varnothing$ ist die Leere Menge.
 \end{enumerate}
 
 \subsection{Beispiel 5}
-\begin{equation}
+\begin{equation*}
   \begin{tabular}{| c | c | c | c | c | c |}
     \hline
     $A$ & $B$ & $C$ & $\lnot C$ & $B \lor \lnot C$ & $A \land (B \lor \lnot C)$ \\ \hline
@@ -399,7 +467,7 @@ $A$, $B$ und $C$ sind beliebige Mengen und $\varnothing$ ist die Leere Menge.
     1 & 1 & 0 & 1 & 1 & 1 \\ \hline
     1 & 1 & 1 & 0 & 1 & 1 \\ \hline
   \end{tabular}
-\end{equation}
+\end{equation*}
 
 \subsection{Beispiel 6}
 \begin{enumerate}
@@ -410,21 +478,21 @@ $A$, $B$ und $C$ sind beliebige Mengen und $\varnothing$ ist die Leere Menge.
 \end{enumerate}
 
 \subsection{Beispiel 7}
-\begin{equation}
+\begin{equation*}
   (A \land B \land \lnot C) \lor (A \land \lnot B \land C) \lor (\lnot A \land B \land C)
-\end{equation}
+\end{equation*}
 
 \subsection{Beispiel 8}
-\begin{equation}
+\begin{equation*}
   (A \land B \land C) \lor (A \land B \land \lnot C) \lor (A \land \lnot B \land \lnot C) \lor (\lnot A \land \lnot B \land C)
-\end{equation}
+\end{equation*}
 
 \subsection{Beispiel 9}
   Diese Aussage lässt sich vereinfacht als $C \lor \lnot C$ darstellen. Es handelt sich also um eine Tautologie und alle Zeilen der Wahrheitstabelle sind wahr.
 
 \subsection{Beispiel 10}
 Beide Aussagen besitzen die selbe Wahrheitstabelle.
-\begin{equation}
+\begin{equation*}
   \begin{tabular}{|c|c|c|c|}
     \hline
     $A$ & $B$ & $\lnot(A \land B)$ & $\lnot A \lor \lnot B$ \\ \hline
@@ -433,7 +501,7 @@ Beide Aussagen besitzen die selbe Wahrheitstabelle.
     1 & 0 & 1 & 1 \\ \hline
     1 & 1 & 0 & 0 \\ \hline
   \end{tabular}
-\end{equation}
+\end{equation*}
 
 \subsection{Beispiel 11}
 \begin{enumerate}[(a)]
@@ -453,7 +521,7 @@ Beide Aussagen besitzen die selbe Wahrheitstabelle.
 \subsection{Beispiel 15}
 
 \subsection{Beispiel 16}
-\begin{equation}
+\begin{equation*}
   \begin{tabular}{|c|c|c|c|}
     \hline
     $A$ & $B$ & $\lnot A$ & $\lnot A \lor B$ \\ \hline
@@ -462,7 +530,7 @@ Beide Aussagen besitzen die selbe Wahrheitstabelle.
     1 & 0 & 0 & 0 \\ \hline
     1 & 1 & 0 & 0 \\ \hline
   \end{tabular}
-\end{equation}
+\end{equation*}
 
 \subsection{Beispiel 27}
 $A = B$ \\
@@ -473,14 +541,14 @@ $F = G$
 \subsection{Beispiel 28}
 Die Lösung ergibt die Leere Menge, da das Resultat in der Menge der komplexen Zahlen ist.
 
-\begin{equation}
+\begin{equation*}
   x = \{\}
-\end{equation}
+\end{equation*}
 
 Die eigentliche Lösung im komplexen Zahlenraum wäre:
-\begin{equation}
+\begin{equation*}
   x = \{+i, -i\}
-\end{equation}
+\end{equation*}
 
 \subsection{Beispiel 29}
 \begin{enumerate}[a)]
@@ -508,9 +576,9 @@ Die eigentliche Lösung im komplexen Zahlenraum wäre:
 \end{enumerate}
 
 \subsection{Beispiel 33}
-\begin{equation}
+\begin{equation*}
   (A \cap B)^{\complement} = \{x : (x \in U \land x \notin A) \lor (x \in U \land x \notin B)\} = \{x : A^{\complement} \lor B^{\complement}\}
-\end{equation}
+\end{equation*}
 
 \subsection{Beispiel 34}
 Wenn man $\varnothing$ und $U$ austauscht und $\cup$ und $\cap$ austauscht erhält man jeweils das andere Gesetzt. Deshalb sind sie paarweise aufgelistet. 
@@ -534,26 +602,35 @@ Eine Menge mit $n$ Elementen besitzt $2^{n}$ Teilmengen.
 \end{enumerate}
 
 \subsection{Beispiel 38}
-\begin{equation}
+\begin{equation*}
   A \times B = \{(1, a), (1, b), (1, c), (2, a), (2, b), (2, c)\} 
-\end{equation}
+\end{equation*}
 
-\begin{equation}
+\begin{equation*}
   B \times A = \{(a, 1), (a, 2), (b, 1), (b, 2), (c, 1), (c, 2)\}
-\end{equation}
+\end{equation*}
 
-\begin{equation}
+\begin{equation*}
   A^{2} = A \times A = \{(1, 1), (1, 2), (2, 1), (2, 2)\}
-\end{equation}
+\end{equation*}
 
 \subsection{Beispiel 39}
 Anzahl der Elemente von $A$ mal die Anzahl der Elemente von $B$ ergibt die Anzahl der Elemente von $A \times B$.
 
+\subsection{Beispiel 71}
+
 
 \subsection{Beispiel 73}
 \begin{enumerate}[(a)]
-  \item $ggT(1564, 134)$
-  \item $ggT(987, 610)$
+  \item $ggT(1564, 134) = 2$
+  \item $ggT(987, 610) = 1$
+\end{enumerate}
+
+\subsection{Beispiel 74}
+
+\subsection{Beispiel 75}
+\begin{enumerate}[(a)]
+  \item $kgV(30, 45) = 90$
 \end{enumerate}
 
 \newpage
@@ -600,9 +677,9 @@ Anzahl der Elemente von $A$ mal die Anzahl der Elemente von $B$ ergibt die Anzah
 \end{enumerate}
 
 \subsubsection{Aufgabe 5}
-\begin{equation}
+\begin{equation*}
   \{x : x \in \mathbb{N} : \}
-\end{equation}
+\end{equation*}
 
 \subsubsection{Aufgabe 6}
 Kleinkinder können keine Krokodile bezwingen.
@@ -615,7 +692,7 @@ Kleinkinder können keine Krokodile bezwingen.
 \subsubsection{Aufgabe 8}
 
 \subsubsection{Aufgabe 9}
-\begin{enumerate}[(a)]
+\begin{enumerate}[(a)] 
   \item f
 \end{enumerate}
 

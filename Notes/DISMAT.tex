@@ -397,6 +397,22 @@ Nachfolgend ein paar Beispiele zur Kongruenzrelation:
   \end{split}
 \end{equation*}
 
+ 
+\subsubsection{Lineare Diophantische Gleichung}
+Gleichungen in der Form $ax + by = c$ nennt man Lineare Diophantische Gleichungen.
+
+Wenn man z. B. die Gleichung $21x + 33y = 969$ lösen möchte, kann man folgendermassen vorgehen:
+\begin{enumerate}[1.)]
+  \item \textbf{Gleichung in Form $ax + by = c$ bringen:}  \\
+  Hier ist sie schon in der richtigen Form.
+  \item \textbf{ggT(a, b) = d, d bestimmen:} \\
+  Der ggT(21, 33) ist 3.
+  \item \textbf{Falls $d \divides c$, die Gleichung $ax + by = d$ mit dem erweiterten Euklidischen Algorithmus lösen:}\\
+  \item \textbf{} \\
+  \item 
+  
+\end{enumerate} 
+
 %%%%%%%%
 %
 % Gesetze
@@ -617,8 +633,61 @@ Eine Menge mit $n$ Elementen besitzt $2^{n}$ Teilmengen.
 \subsection{Beispiel 39}
 Anzahl der Elemente von $A$ mal die Anzahl der Elemente von $B$ ergibt die Anzahl der Elemente von $A \times B$.
 
-\subsection{Beispiel 71}
+\subsection{Beispiel 49} 
+  (a)
+  \begin{equation*}
+    f^{-1}(x) = \frac{x - 1}{2}
+  \end{equation*} 
+ 
+  (b)
+  \begin{equation*}
+    f^{-1}(x) = \frac{x}{1 - 2x}
+  \end{equation*}
+\subsection{Beispiel 55}
+Die Summe ergibt 10.
 
+\subsection{Beispiel 56}
+\begin{equation*}
+  \sum_{k=1}^{50} \frac{1}{(2k - 1) (2k + 1)}
+\end{equation*}
+
+\subsection{Beispiel 66}
+(a)
+\begin{equation*}
+  \binom{n}{0} = \frac{n!}{0!(n - k)!} = \frac{n!}{1 - n!} = \frac{n!}{n!} = 1
+\end{equation*}
+
+\begin{equation*}
+  \binom{n}{n} = \frac{n!}{n!(n - n)!} = \frac{n!}{n! - 0!} = \frac{n!}{n!} = 1
+\end{equation*}   
+
+(b)
+\begin{equation*}
+  \binom{n}{1} = \frac{n!}{1!(n-1)!} = \frac{n!}{(n - 1)!} = \frac{1 * 2 * 3 * ... * n - 1 * n}{1 * 2 * 3 * ... * n - 1} = n
+\end{equation*}
+
+\begin{equation*}
+  \binom{n}{n - 1} = \frac{n!}{(n - 1)!(n - (n - 1))!} = \frac{n!}{1!(n-1)!} = \frac{n!}{(n - 1)!} = \frac{1 * 2 * 3 * ... * n - 1 * n}{1 * 2 * 3 * ... * n - 1} = n
+\end{equation*}
+
+\subsection{Beispiel 67}
+\begin{equation*}
+  \begin{split}
+    \frac{n!}{k!(n-k)!} & = \frac{n!}{(n-k)!(n - (n - k))!} \\
+    & = \frac{n!}{(n-k)!(k)!} \\
+    & = \frac{n!}{k!(n - k)!}
+  \end{split}
+\end{equation*}
+
+\subsection{Beispiel 69}
+Die Teiler von 30 sind $\{1, 2, 3, 5, 6, 10, 15\}$.
+
+\subsection{Beispiel 70}
+\begin{enumerate}[$\bullet$]
+  \item $30 = 2 * 3 * 5$
+  \item $45 = 3 * 3 * 5$
+  \item $120 = 2 * 2 * 2 * 3 * 5$
+\end{enumerate}
 
 \subsection{Beispiel 73}
 \begin{enumerate}[(a)]
